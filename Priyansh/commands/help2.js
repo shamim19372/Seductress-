@@ -1,4 +1,4 @@
- module.exports.config = {
+module.exports.config = {
 	name: "help2",
 	version: "1.0.2",
 	hasPermssion: 0,
