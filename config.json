@@ -16,13 +16,13 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "Basanti Bot",
-    "PREFIX": ".",
+    "BOTNAME": "Queen",
+    "PREFIX": "√",
     "ADMINBOT": [
-        "61561181862726"
+        "61566744287237"
     ],
     "NDH": [
-        "61561181862726"
+        "61566744287237"
     ],
     "DATABASE": {
         "sqlite": {
