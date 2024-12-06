@@ -64,7 +64,7 @@ if (args[0] == "all") {
      var obj = Object.keys(data);
     var firstname = data[obj].name.replace("@", "");
     let callback = function () {
-        api.sendMessage({ body:`𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁\n\n` + msg + `\nSpamming the bot are strictly prohibited\n\nTotal Commands: ${commands.size}\n\nFor All Cmds Type help2\n\nDeveloper:\n「 𓆩⃝ᎡᎪᎽᎪΝ ᎪΝՏᎪᎡᏆ𓆩๏𓆪 」`, mentions: [{
+        api.sendMessage({ body:`𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁\n\n` + msg + `\nSpamming the bot are strictly prohibited\n\nTotal Commands: ${commands.size}\n\nFor All Cmds Type help2\n\nDeveloper:\n「 𓆩⃝NEELAM RAI𓆩๏𓆪 」`, mentions: [{
                            tag: firstname,
                            id: admID,
                            fromIndex: 0,
@@ -107,7 +107,7 @@ const first = numberOfOnePage * page - numberOfOnePage;
 
     const siu = `★𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁★\n━━━━━━━━━━━━━━━━`;
 
- const text = `\n𝐏𝐀𝐆𝐄 (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\nFor All Cmds Type Help2\n━━━━━━━━━━━━━━━━\n「 𓆩⃝VIRAT SAINI𓆩๏𓆪 」`;
+ const text = `\n𝐏𝐀𝐆𝐄 (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\nFor All Cmds Type Help2\n━━━━━━━━━━━━━━━━\n「 DAIRY MILK 𓆩๏𓆪 」`;
     var link = [
 "https://i.imgur.com/a7kd3ov.jpeg"
       ]
