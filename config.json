@@ -16,13 +16,13 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "Farooq King",
+    "BOTNAME": "No Option",
     "PREFIX": "+",
     "ADMINBOT": [
-        "100092323833716"
+        "61566744287237"
     ],
     "NDH": [
-        "100092323833716"
+        "61566744287237"
     ],
     "DATABASE": {
         "sqlite": {
