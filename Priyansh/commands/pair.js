@@ -2,10 +2,10 @@ module.exports.config = {
   name: "pair",
   version: "1.0.0", 
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-  description: "0Pairing",
-  commandCategory: "Love", 
-  usages: "pair", 
+  credits: "PREM BABU",
+  description: "THIS BOT IS MADE BY PREM BABU",
+  commandCategory: "COUPLE LOVE PAIRING", 
+  usages: "PAIR", 
   cooldowns: 0
 };
 module.exports.run = async function({ api, event, args, Users, Threads, Currencies }) {
@@ -13,7 +13,7 @@ module.exports.run = async function({ api, event, args, Users, Threads, Currenci
         const fs = global.nodemodule["fs-extra"];
         // var data = await Currencies.getData(event.senderID);
         var money = data.money
-        if(money < 1) api.sendMessage("You need 500 USD for 1 pairing, please use ${global.config.PREFIX}work to received money or ask for admin bot!\n🤑Theres something new to eat🤑",event.threadID,event.messageID)
+        if(money < 1) api.sendMessage("तुम बहोत पेयर-पेयर करते हो इसलिए अब मुझे पांच सो रूपे दो फिर आपका जोड़ी बनाऊंगा 😐👈 ",event.threadID,event.messageID)
         else {
          var tl = ['21%', '67%', '19%', '37%', '17%', '96%', '52%', '62%', '76%', '83%', '100%', '99%', "0%", "48%"];
         var tle = tl[Math.floor(Math.random() * tl.length)];
@@ -27,25 +27,23 @@ module.exports.run = async function({ api, event, args, Users, Threads, Currenci
         var arraytag = [];
                 arraytag.push({id: event.senderID, tag: namee});
                 arraytag.push({id: id, tag: name});
-        // api.changeNickname(`😘👉🔐🔐 ${name} Property 🔐🔐👈😘`, event.threadID, event.senderID);
-        // api.changeNickname(`😘👉🔐🔐 ${namee} Property🔐🔐👈😘`, event.threadID, id);
+        
         var sex = await data[id].gender;
         var gender = sex == 2 ? "Male🧑" : sex == 1 ? "Female👩‍🦰" : "Trần Đức Bo";
-        // Currencies.setData(event.senderID, options = {money: money - 500})
-        let Avatar = (await axios.get( `https://graph.facebook.com/${id}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data;
-            fs.writeFileSync( __dirname + "/cache/avt.png", Buffer.from(Avatar, "utf-8") );
+        let Avatar = (await axios.get( `https://graph.facebook.com/${event.senderID}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data;
+            fs.writeFileSync( __dirname + "/cache/avt2.png", Buffer.from(Avatar, "utf-8") );
 
-          let gifLove = (await axios.get( `https://i.imgur.com/vcydK3t.gif`, { responseType: "arraybuffer" } )).data; 
+          let gifLove = (await axios.get( `https://i.imgur.com/MBETCWy.gif`, { responseType: "arraybuffer" } )).data; 
               fs.writeFileSync( __dirname + "/cache/giflove.png", Buffer.from(gifLove, "utf-8") );
           
-        let Avatar2 = (await axios.get( `https://graph.facebook.com/${event.senderID}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data;
-            fs.writeFileSync( __dirname + "/cache/avt2.png", Buffer.from(Avatar2, "utf-8") );
+        let Avatar2 = (await axios.get( `https://graph.facebook.com/${id}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data;
+            fs.writeFileSync( __dirname + "/cache/avt.png", Buffer.from(Avatar2, "utf-8") );
         var imglove = [];
-              imglove.push(fs.createReadStream(__dirname + "/cache/avt.png"));
-              imglove.push(fs.createReadStream(__dirname + "/cache/giflove.png"));
               imglove.push(fs.createReadStream(__dirname + "/cache/avt2.png"));
-        var msg = {body: `🥰Successful pairing!\n💌Wish you two hundred years of happiness\nyour partner is of the same gender: ${gender}\nDual ratio: ${tle}\n`+namee+" "+"❤️"+" "+name, mentions: arraytag, attachment: imglove}
-        // var msg = {body: `🥰Successful pairing!\n💌Wish you two hundred years of happiness\n💕Double ratio: ${tle}%\n`+namee+" "+"💓"+" "+name, mentions: arraytag, attachment: imglove}  
+              imglove.push(fs.createReadStream(__dirname + "/cache/giflove.png"));
+              imglove.push(fs.createReadStream(__dirname + "/cache/avt.png"));
+        var msg = {body:`लो मिल गया आपका जीवन साथी 🙂🖐️\nअब बार-बार मत बोलना सेटिंग करवाने को 😒👈\nआप दोनो का प्यार 👉 ${tle} है। 🤐👈\n`+namee+" "+"💖"+" "+name, mentions: arraytag, attachment: imglove}
+      
          return api.sendMessage(msg, event.threadID, event.messageID)
       }
 }
