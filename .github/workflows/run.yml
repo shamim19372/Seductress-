@@ -1,6 +1,6 @@
 name: Node.js CI
 
-on:
+on: working 
   push:
     branches: [main]
   pull_request:
@@ -31,11 +31,7 @@ jobs:
 
     # Step to run the bot with the correct port
     - name: Start the bot
-      env:
+      enva: start chatting 
         PORT: 8080
       run: npm start
-
-- name: Keep Alive
-  run: |
-    while true; do echo "Bot running..."; sleep 300; done
       
